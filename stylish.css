@@ -1,0 +1,121 @@
+/* Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Background Video */
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: orange;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: red;
+}
+
+/* Hero Section Content */
+.detel {
+    position: relative;
+    text-align: center;
+    margin-top: 13%;
+    margin-bottom: 11%;
+    color: white;
+    z-index: 1;
+}
+
+.detel h1 {
+    font-size: 50px;
+    color: orange;
+    margin-bottom: 20px;
+}
+
+.detel p {
+    line-height: 22px;
+}
+
+.detel a {
+    background: violet;
+    padding: 8px 18px;
+    font-weight: bold;
+    color: #fff;
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.detel a:hover {
+    background: blue;
+    color: white;
+}
+
+/* Additional Styling for Responsiveness */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .detel h1 {
+        font-size: 36px;
+    }
+
+    .detel p {
+        font-size: 14px;
+        
+    }
+
+    .detel a {
+        padding: 6px 14px;
+        font-size: 14px;
+    }
+}
